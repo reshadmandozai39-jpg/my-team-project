@@ -1,0 +1,3350 @@
+<!doctype html>
+
+<html data-lt-installed="true">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>TEAM PRO</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/w3.css" />
+		<link rel="stylesheet" href="./css/w3-theme-black.css" />
+		<link rel="stylesheet" href="./css/custom.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	</head>
+
+	<body id="myPage">
+		<!-- Sidebar on click -->
+		<nav
+			class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge"
+			style="display: none; z-index: 2"
+			id="mySidebar">
+			<a
+				href="javascript:void(0)"
+				onclick="w3_close()"
+				class="w3-bar-item w3-button w3-display-topright w3-text-blue-grey"
+				>Close
+				<i class="fa fa-remove"></i>
+			</a>
+			<a href="./index.html#" class="w3-bar-item w3-button">Link 1</a>
+			<a href="./index.html#" class="w3-bar-item w3-button">Link 2</a>
+			<a href="./index.html#" class="w3-bar-item w3-button">Link 3</a>
+			<a href="./index.html#" class="w3-bar-item w3-button">Link 4</a>
+			<a href="./index.html#" class="w3-bar-item w3-button">Link 5</a>
+		</nav>
+		<!-- Navbar -->
+		<div
+			id="mainNav"
+			class="w3-top"
+			role="navigation"
+			aria-label="Hauptnavigation"
+			style="
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 999;
+				transition: transform 0.3s ease;
+			">
+			<div
+				class="w3-bar w3-left-align w3-large"
+				style="
+					background-color: #1a1a1a;
+					box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+					border-radius: 24px;
+					margin: 12px;
+					width: auto;
+				">
+				<!-- Menü-Button (nur auf kleinen Bildschirmen) -->
+				<a
+					class="w3-bar-item w3-button w3-hide-large w3-right"
+					href="javascript:void(0);"
+					onclick="openNav()">
+					<i class="fa fa-bars"></i>
+				</a>
+
+				<!-- Logo -->
+				<a
+					href="./index.html#"
+					class="w3-bar-item w3-button w3-text-white w3-hover-none"
+					style="padding-left: 32px">
+					<span
+						class="fa fa-users w3-circle w3-text-white w3-margin-right"
+						style="
+							padding: 8px 10px;
+							background: linear-gradient(
+								45deg,
+								#f09433 0%,
+								#e6683c 25%,
+								#dc2743 50%,
+								#cc2366 75%,
+								#bc1888 100%
+							);
+						"></span>
+					<b class="w3-wide">TEAM</b><span style="color: #9e9e9e"> PRO</span>
+				</a>
+
+				<!-- Menü-Links (nur auf grossen Bildschirmen) -->
+				<a
+					href="./index.html#team"
+					onclick="setActiveNav(this)"
+					class="nav-link w3-bar-item w3-button w3-hide-small w3-hide-medium w3-text-white">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 8px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+						<circle cx="9" cy="7" r="4" />
+						<path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+						<path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg
+					>Team
+				</a>
+				<a
+					href="./index.html#work"
+					onclick="setActiveNav(this)"
+					class="nav-link w3-bar-item w3-button w3-hide-small w3-hide-medium w3-text-white">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 8px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+						<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg
+					>Arbeit
+				</a>
+				<a
+					href="./index.html#pricing"
+					onclick="setActiveNav(this)"
+					class="nav-link w3-bar-item w3-button w3-hide-small w3-hide-medium w3-text-white">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 8px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19" />
+						<path
+							d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z" />
+						<circle cx="6.5" cy="9.5" r=".5" fill="#ffffff" /></svg
+					>Preise
+				</a>
+				<a
+					href="./index.html#contact"
+					onclick="setActiveNav(this)"
+					class="nav-link w3-bar-item w3-button w3-hide-small w3-hide-medium w3-text-white">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 8px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<rect width="20" height="16" x="2" y="4" rx="2" />
+						<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg
+					>Kontakt
+				</a>
+
+				<!-- Suche rechts (Text + leuchtender Button) -->
+				<a
+					href="javascript:void(0)"
+					onclick="openSearch()"
+					class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right w3-text-white w3-hover-none"
+					style="padding-right: 32px"
+					title="Suche">
+					<span style="color: #9e9e9e; margin-right: 10px">Suche</span>
+					<span
+						class="fa fa-search w3-circle w3-white w3-text-black"
+						aria-hidden="true"
+						style="
+							padding: 8px 10px;
+							box-shadow: 0 0 12px 2px rgba(120, 180, 255, 0.9);
+						"></span>
+				</a>
+			</div>
+
+			<!-- Navbar auf kleinen Bildschirmen (aufklappbar) -->
+			<div
+				id="navDemo"
+				class="w3-bar-block w3-hide w3-hide-large w3-large"
+				aria-label="Mobile Navigation"
+				style="background-color: #1a1a1a">
+				<a
+					href="./index.html#team"
+					class="w3-bar-item w3-button w3-text-white"
+					onclick="openNav()"
+					aria-label="Menü öffnen"
+					aria-expanded="false"
+					style="display: flex; align-items: center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 10px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+						<circle cx="9" cy="7" r="4" />
+						<path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+						<path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg
+					>Team</a
+				>
+				<a
+					href="./index.html#work"
+					class="w3-bar-item w3-button w3-text-white"
+					aria-label="Menü öffnen"
+					aria-expanded="false"
+					onclick="openNav()"
+					style="display: flex; align-items: center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 10px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+						<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg
+					>Arbeit</a
+				>
+				<a
+					href="./index.html#pricing"
+					class="w3-bar-item w3-button w3-text-white"
+					aria-label="Menü öffnen"
+					aria-expanded="false"
+					onclick="openNav()"
+					style="display: flex; align-items: center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 10px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19" />
+						<path
+							d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z" />
+						<circle cx="6.5" cy="9.5" r=".5" fill="#ffffff" /></svg
+					>Preise</a
+				>
+				<a
+					href="./index.html#contact"
+					class="w3-bar-item w3-button w3-text-white"
+					aria-label="Menü öffnen"
+					aria-expanded="false"
+					onclick="openNav()"
+					style="display: flex; align-items: center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 10px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<rect width="20" height="16" x="2" y="4" rx="2" />
+						<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg
+					>Kontakt</a
+				>
+				<a
+					href="javascript:void(0)"
+					aria-label="Menü öffnen"
+					aria-expanded="false"
+					onclick="
+						openSearch();
+						openNav();
+					"
+					class="w3-bar-item w3-button w3-text-white"
+					style="display: flex; align-items: center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#ffffff"
+						stroke-width="2.2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						style="
+							width: 28px;
+							height: 28px;
+							padding: 6px;
+							box-sizing: border-box;
+							border-radius: 50%;
+							margin-right: 10px;
+							vertical-align: middle;
+							background: linear-gradient(
+								45deg,
+								#f09433,
+								#e6683c,
+								#dc2743,
+								#cc2366,
+								#bc1888
+							);
+						">
+						<circle cx="11" cy="11" r="8" />
+						<path d="m21 21-4.3-4.3" /></svg
+					>Suche</a
+				>
+			</div>
+		</div>
+
+		<!-- Image Header -->
+		<header class="w3-display-container w3-animate-opacity">
+			<img
+				class="w3-image"
+				src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2400&q=90"
+				alt="TEAMPRO"
+				style="
+					width: 100%;
+					height: 650px;
+					min-height: 450px;
+					object-fit: cover;
+					object-position: center;
+				" />
+			<!-- Dunkler Verlauf fuer bessere Lesbarkeit des Textes -->
+			<div
+				class="w3-display-middle"
+				style="
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+				"></div>
+			<div class="w3-display-middle w3-center w3-padding">
+				<h1
+					class="w3-jumbo w3-text-white"
+					style="text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6)">
+					TEAM<span class="w3-text-light-grey">PRO</span>
+				</h1>
+				<p
+					class="w3-xlarge w3-text-white"
+					style="text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6)">
+					Wir gestalten Websites, die zu dir und deiner Idee passen.
+				</p>
+				<a
+					href="#contact"
+					class="w3-button w3-white w3-padding-large w3-round-large w3-margin-top w3-hover-black">
+					<i class="fa fa-paper-plane w3-margin-right"></i>Jetzt Kontakt
+					aufnehmen
+				</a>
+			</div>
+		</header>
+
+		<!-- Such-Modal -->
+		<div
+			id="searchModal"
+			role="dialog"
+			aria-modal="true"
+			aria-labelledby="searchTitle"
+			class="w3-modal"
+			style="z-index: 1000">
+			<div
+				class="w3-modal-content w3-card-4 w3-animate-top w3-round-large"
+				style="max-width: 620px; overflow: hidden; background-color: #000000">
+				<!-- Suchfeld -->
+				<div style="position: relative; border-bottom: 1px solid #222222">
+					<i
+						class="fa fa-search"
+						aria-hidden="true"
+						style="
+							position: absolute;
+							left: 24px;
+							top: 24px;
+							color: #9e9e9e;
+							font-size: 18px;
+						"></i>
+					<span
+						onclick="closeSearch()"
+						aria-label="Suche schliessen"
+						title="Schliessen"
+						style="
+							position: absolute;
+							right: 20px;
+							top: 18px;
+							cursor: pointer;
+							color: #9e9e9e;
+							font-size: 22px;
+						"
+						>&times;</span
+					>
+					<input
+						id="searchInput"
+						type="text"
+						placeholder="Suche nach Team, Arbeit, Preise ..."
+						aria-label="Suchbegriff eingeben"
+						onkeyup="handleSearchKey(event)"
+						style="
+							width: 100%;
+							border: none;
+							outline: none;
+							font-size: 18px;
+							padding: 20px 48px 20px 56px;
+							box-sizing: border-box;
+							background-color: #000000;
+							color: #ffffff;
+						" />
+				</div>
+
+				<!-- Letzte Suchen -->
+				<div style="padding: 16px 0">
+					<p
+						id="suggestionsTitle"
+						style="
+							margin: 0;
+							padding: 0 24px 8px 24px;
+							color: #90a4ae;
+							font-size: 14px;
+						">
+						Letzte Suchen
+					</p>
+
+					<a
+						href="javascript:void(0)"
+						onclick="quickSearch('Team')"
+						class="w3-hover-black search-suggestion"
+						data-term="Team"
+						style="
+							display: block;
+							padding: 12px 24px;
+							border-left: 3px solid #3b82f6;
+							background-color: #262626;
+							text-decoration: none;
+							color: #e5e7eb;
+						">
+						<span
+							style="
+								display: inline-block;
+								width: 40px;
+								height: 40px;
+								line-height: 40px;
+								text-align: center;
+								border-radius: 50%;
+								background: linear-gradient(
+									45deg,
+									#f09433,
+									#e6683c,
+									#dc2743,
+									#cc2366,
+									#bc1888
+								);
+								vertical-align: middle;
+							"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="22"
+								height="22"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="#ffffff"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								style="vertical-align: middle">
+								<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+								<circle cx="9" cy="7" r="4" />
+								<path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+								<path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg
+						></span>
+						<span style="margin-left: 12px; vertical-align: middle"
+							><b>Team</b>
+							<span style="color: #94a3b8"> Die Köpfe dahinter</span></span
+						>
+					</a>
+
+					<a
+						href="javascript:void(0)"
+						onclick="quickSearch('Arbeit')"
+						class="w3-hover-black search-suggestion"
+						data-term="Arbeit"
+						style="
+							display: block;
+							padding: 12px 24px;
+							border-left: 3px solid transparent;
+							text-decoration: none;
+							color: #e5e7eb;
+						">
+						<span
+							style="
+								display: inline-block;
+								width: 40px;
+								height: 40px;
+								line-height: 40px;
+								text-align: center;
+								border-radius: 50%;
+								background: linear-gradient(
+									45deg,
+									#f09433,
+									#e6683c,
+									#dc2743,
+									#cc2366,
+									#bc1888
+								);
+								vertical-align: middle;
+							"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="22"
+								height="22"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="#ffffff"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								style="vertical-align: middle">
+								<rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+								<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg
+						></span>
+						<span style="margin-left: 12px; vertical-align: middle"
+							><b>Arbeit</b>
+							<span style="color: #94a3b8"> Unsere Projekte</span></span
+						>
+					</a>
+
+					<a
+						href="javascript:void(0)"
+						onclick="quickSearch('Preise')"
+						class="w3-hover-black search-suggestion"
+						data-term="Preise"
+						style="
+							display: block;
+							padding: 12px 24px;
+							border-left: 3px solid transparent;
+							text-decoration: none;
+							color: #e5e7eb;
+						">
+						<span
+							style="
+								display: inline-block;
+								width: 40px;
+								height: 40px;
+								line-height: 40px;
+								text-align: center;
+								border-radius: 50%;
+								background: linear-gradient(
+									45deg,
+									#f09433,
+									#e6683c,
+									#dc2743,
+									#cc2366,
+									#bc1888
+								);
+								vertical-align: middle;
+							"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="22"
+								height="22"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="#ffffff"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								style="vertical-align: middle">
+								<path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19" />
+								<path
+									d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z" />
+								<circle cx="6.5" cy="9.5" r=".5" fill="#ffffff" /></svg
+						></span>
+						<span style="margin-left: 12px; vertical-align: middle"
+							><b>Preise</b>
+							<span style="color: #94a3b8"> Pläne & Tarife</span></span
+						>
+					</a>
+
+					<a
+						href="javascript:void(0)"
+						onclick="quickSearch('Kontakt')"
+						class="w3-hover-black search-suggestion"
+						data-term="Kontakt"
+						style="
+							display: block;
+							padding: 12px 24px;
+							border-left: 3px solid transparent;
+							text-decoration: none;
+							color: #e5e7eb;
+						">
+						<span
+							style="
+								display: inline-block;
+								width: 40px;
+								height: 40px;
+								line-height: 40px;
+								text-align: center;
+								border-radius: 50%;
+								background: linear-gradient(
+									45deg,
+									#f09433,
+									#e6683c,
+									#dc2743,
+									#cc2366,
+									#bc1888
+								);
+								vertical-align: middle;
+							"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="22"
+								height="22"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="#ffffff"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								style="vertical-align: middle">
+								<rect width="20" height="16" x="2" y="4" rx="2" />
+								<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg
+						></span>
+						<span style="margin-left: 12px; vertical-align: middle"
+							><b>Kontakt</b>
+							<span style="color: #94a3b8"> Schreib uns</span></span
+						>
+					</a>
+
+					<a
+						href="javascript:void(0)"
+						onclick="quickSearch('Webdesign')"
+						class="w3-hover-black search-suggestion"
+						data-term="Webdesign"
+						style="
+							display: block;
+							padding: 12px 24px;
+							border-left: 3px solid transparent;
+							text-decoration: none;
+							color: #e5e7eb;
+						">
+						<span
+							style="
+								display: inline-block;
+								width: 40px;
+								height: 40px;
+								line-height: 40px;
+								text-align: center;
+								border-radius: 50%;
+								background: linear-gradient(
+									45deg,
+									#f09433,
+									#e6683c,
+									#dc2743,
+									#cc2366,
+									#bc1888
+								);
+								vertical-align: middle;
+							"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="22"
+								height="22"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="#ffffff"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								style="vertical-align: middle">
+								<path
+									d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08" />
+								<path
+									d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z" /></svg
+						></span>
+						<span style="margin-left: 12px; vertical-align: middle"
+							><b>Webdesign</b>
+							<span style="color: #94a3b8"> Unsere Leistungen</span></span
+						>
+					</a>
+
+					<p
+						id="searchResult"
+						class="w3-text-blue-grey"
+						style="margin: 8px 0 0 0; padding: 0 24px"></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Team Container -->
+		<div class="w3-container w3-padding-64 w3-center" id="team">
+			<p
+				class="w3-wide"
+				style="
+					font-size: clamp(80px, 2.6vw, 40px);
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					color: #6b7280;
+					font-weight: 600;
+					margin-bottom: 8px;
+				">
+				UNSER TEAM
+			</p>
+			<h2
+				style="
+					font-size: clamp(48px, 6vw, 80px);
+					font-weight: 700;
+					margin-top: 0;
+				">
+				Die Köpfe hinter dem Projekt
+			</h2>
+
+			<div class="w3-content" style="max-width: 1700px">
+				<h3
+					class="w3-text-blue-grey"
+					style="
+						line-height: 1.35;
+						font-size: clamp(21px, 2.4vw, 32px);
+						font-weight: 600;
+					">
+					Wir nehmen deine Idee genauso ernst wie du.
+				</h3>
+				<p
+					style="
+						color: #334155;
+						font-size: clamp(17px, 1.5vw, 24px);
+						line-height: 1.7;
+					">
+					Wir sind <b>TEAM PRO</b>: Strateg:innen, Designer:innen und
+					Entwickler:innen mit einem gemeinsamen Antrieb aus einer guten Idee
+					etwas Reales zu machen, das funktioniert.
+				</p>
+				<p
+					style="
+						color: #475569;
+						font-size: clamp(17px, 1.5vw, 24px);
+						line-height: 1.7;
+					">
+					Kein Fachchinesisch, keine leeren Versprechen. Wir hören zu, denken
+					mit und sprechen offen über das, was möglich ist und was nicht. Vom
+					ersten Gespräch bis zum fertigen Ergebnis bist du bei uns kein Projekt
+					unter vielen, sondern ein Ansprechpartner auf Augenhöhe. Das ist kein
+					Werbeversprechen, sondern die Art, wie wir arbeiten.
+				</p>
+				<p
+					style="
+						color: #475569;
+						font-size: clamp(17px, 1.5vw, 24px);
+						line-height: 1.7;
+					">
+					Jede:r im Team bringt eine eigene Perspektive mit aus Strategie,
+					Design und Entwicklung. Diese Kombination erlaubt es uns, Lösungen zu
+					entwickeln, die wirklich zu deinem Vorhaben passen, statt fertige
+					Konzepte von der Stange zu liefern. Wenn eine Idee sich verbessern
+					lässt, sagen wir das offen. Und wenn ein Ergebnis überzeugt, sehen wir
+					das als gemeinsamen Erfolg.
+				</p>
+				<p
+					style="
+						color: #475569;
+						font-size: clamp(17px, 1.5vw, 24px);
+						line-height: 1.7;
+					">
+					Am meisten reizt uns die Arbeit dort, wo aus einer ersten Skizze etwas
+					Konkretes entsteht Schritt für Schritt, mit Sorgfalt bis ins Detail.
+					Lern uns kennen und überzeug dich selbst von unserer Arbeitsweise.
+				</p>
+			</div>
+			<br />
+
+			<!-- Bild-Galerie mit Firmen-Texten -->
+			<div
+				style="
+					display: flex;
+					flex-wrap: wrap;
+					gap: 20px;
+					justify-content: center;
+					align-items: stretch;
+				">
+				<div
+					class="w3-card-4 w3-round-large"
+					style="
+						flex: 1 1 calc(50% - 12px);
+						max-width: calc(50% - 12px);
+						overflow: hidden;
+						background: #ffffff;
+					">
+					<img
+						src="./src/video/img/img1.jpg"
+						alt="Kreative Köpfe"
+						style="
+							width: 100%;
+							height: 320px;
+							object-fit: cover;
+							display: block;
+						" />
+					<div style="padding: 16px">
+						<b style="color: #1e293b; font-size: 18px">Kreative Köpfe</b>
+						<p
+							style="
+								color: #16a34a;
+								font-size: 14px;
+								font-weight: 600;
+								margin: 4px 0 0 0;
+							">
+							UX/UI Designer
+						</p>
+						<p
+							style="
+								color: #64748b;
+								font-size: 14px;
+								line-height: 1.6;
+								margin: 8px 0 0 0;
+							">
+							Gestaltet intuitive Oberflächen und Wireframes, damit jedes
+							Projekt seine eigene Handschrift bekommt.
+						</p>
+						<div
+							style="
+								margin-top: 12px;
+								display: flex;
+								gap: 14px;
+								align-items: center;
+								justify-content: center;
+							">
+							<a
+								href="https://github.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitHub"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#181717">
+									<path
+										d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+								</svg>
+							</a>
+							<a
+								href="https://gitlab.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitLab"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#FC6D26">
+									<path
+										d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 0 0-.867 0L16.418 9.45H7.582L4.919 1.263a.455.455 0 0 0-.867 0L1.388 9.452.046 13.587a.924.924 0 0 0 .331 1.023L12 23.054l11.623-8.443a.924.924 0 0 0 .332-1.024" />
+								</svg>
+							</a>
+							<a
+								href="https://linkedin.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="LinkedIn"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2">
+									<path
+										d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div
+					class="w3-card-4 w3-round-large"
+					style="
+						flex: 1 1 calc(50% - 12px);
+						max-width: calc(50% - 12px);
+						overflow: hidden;
+						background: #ffffff;
+					">
+					<img
+						src="./src/video/img/img2.jpg"
+						alt="Echtes Teamwork"
+						style="
+							width: 100%;
+							height: 320px;
+							object-fit: cover;
+							display: block;
+						" />
+					<div style="padding: 16px">
+						<b style="color: #1e293b; font-size: 18px">Echtes Teamwork</b>
+						<p
+							style="
+								color: #16a34a;
+								font-size: 14px;
+								font-weight: 600;
+								margin: 4px 0 0 0;
+							">
+							Frontend-Entwicklerin
+						</p>
+						<p
+							style="
+								color: #64748b;
+								font-size: 14px;
+								line-height: 1.6;
+								margin: 8px 0 0 0;
+							">
+							Setzt Designs in sauberen, responsiven Code um und bringt Ideen im
+							Browser zum Leben.
+						</p>
+						<div
+							style="
+								margin-top: 12px;
+								display: flex;
+								gap: 14px;
+								align-items: center;
+								justify-content: center;
+							">
+							<a
+								href="https://github.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitHub"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#181717">
+									<path
+										d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+								</svg>
+							</a>
+							<a
+								href="https://gitlab.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitLab"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#FC6D26">
+									<path
+										d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 0 0-.867 0L16.418 9.45H7.582L4.919 1.263a.455.455 0 0 0-.867 0L1.388 9.452.046 13.587a.924.924 0 0 0 .331 1.023L12 23.054l11.623-8.443a.924.924 0 0 0 .332-1.024" />
+								</svg>
+							</a>
+							<a
+								href="https://linkedin.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="LinkedIn"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2">
+									<path
+										d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div
+					class="w3-card-4 w3-round-large"
+					style="
+						flex: 1 1 calc(50% - 12px);
+						max-width: calc(50% - 12px);
+						overflow: hidden;
+						background: #ffffff;
+					">
+					<img
+						src="./src/video/img/img3.jpg"
+						alt="Mit Leidenschaft"
+						style="
+							width: 100%;
+							height: 320px;
+							object-fit: cover;
+							display: block;
+						" />
+					<div style="padding: 16px">
+						<b style="color: #1e293b; font-size: 18px">Mit Leidenschaft</b>
+						<p
+							style="
+								color: #16a34a;
+								font-size: 14px;
+								font-weight: 600;
+								margin: 4px 0 0 0;
+							">
+							Projektmanagerin
+						</p>
+						<p
+							style="
+								color: #64748b;
+								font-size: 14px;
+								line-height: 1.6;
+								margin: 8px 0 0 0;
+							">
+							Behält Zeitplan und Budget im Blick und hält das Team mit
+							Leidenschaft zusammen.
+						</p>
+						<div
+							style="
+								margin-top: 12px;
+								display: flex;
+								gap: 14px;
+								align-items: center;
+								justify-content: center;
+							">
+							<a
+								href="https://github.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitHub"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#181717">
+									<path
+										d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+								</svg>
+							</a>
+							<a
+								href="https://gitlab.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitLab"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#FC6D26">
+									<path
+										d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 0 0-.867 0L16.418 9.45H7.582L4.919 1.263a.455.455 0 0 0-.867 0L1.388 9.452.046 13.587a.924.924 0 0 0 .331 1.023L12 23.054l11.623-8.443a.924.924 0 0 0 .332-1.024" />
+								</svg>
+							</a>
+							<a
+								href="https://linkedin.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="LinkedIn"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2">
+									<path
+										d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div
+					class="w3-card-4 w3-round-large"
+					style="
+						flex: 1 1 calc(50% - 12px);
+						max-width: calc(50% - 12px);
+						overflow: hidden;
+						background: #ffffff;
+					">
+					<img
+						src="./src/video/img/img4.jpg"
+						alt="Immer neugierig"
+						style="
+							width: 100%;
+							height: 320px;
+							object-fit: cover;
+							display: block;
+						" />
+					<div style="padding: 16px">
+						<b style="color: #1e293b; font-size: 18px">Immer neugierig</b>
+						<p
+							style="
+								color: #16a34a;
+								font-size: 14px;
+								font-weight: 600;
+								margin: 4px 0 0 0;
+							">
+							Backend-Entwickler
+						</p>
+						<p
+							style="
+								color: #64748b;
+								font-size: 14px;
+								line-height: 1.6;
+								margin: 8px 0 0 0;
+							">
+							Baut stabile Schnittstellen und Datenbanken und bleibt bei neuen
+							Technologien immer neugierig.
+						</p>
+						<div
+							style="
+								margin-top: 12px;
+								display: flex;
+								gap: 14px;
+								align-items: center;
+								justify-content: center;
+							">
+							<a
+								href="https://github.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitHub"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#181717">
+									<path
+										d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+								</svg>
+							</a>
+							<a
+								href="https://gitlab.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="GitLab"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#FC6D26">
+									<path
+										d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 0 0-.867 0L16.418 9.45H7.582L4.919 1.263a.455.455 0 0 0-.867 0L1.388 9.452.046 13.587a.924.924 0 0 0 .331 1.023L12 23.054l11.623-8.443a.924.924 0 0 0 .332-1.024" />
+								</svg>
+							</a>
+							<a
+								href="https://linkedin.com"
+								target="_blank"
+								rel="noopener"
+								aria-label="LinkedIn"
+								style="display: inline-flex">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2">
+									<path
+										d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Team-Momente: Text links, Video rechts -->
+		<div class="w3-container w3-padding-64" id="moments">
+			<div class="w3-content" style="max-width: 1700px">
+				<div class="w3-row-padding">
+					<!-- Text über volle Breite -->
+					<div class="w3-col l12 m12 w3-padding-16">
+						<div class="w3-center">
+							<p
+								class="w3-wide"
+								style="
+									font-size: clamp(26px, 2.6vw, 40px);
+									text-transform: uppercase;
+									letter-spacing: 3px;
+									color: #6b7280;
+									font-weight: 600;
+									margin-bottom: 8px;
+								">
+								UNSER TEAMLEBEN
+							</p>
+							<h2
+								style="
+									font-size: clamp(48px, 6vw, 80px);
+									font-weight: 700;
+									margin-top: 0;
+								">
+								Gemeinsame Momente
+							</h2>
+							<h3
+								class="w3-text-blue-grey"
+								style="
+									line-height: 1.35;
+									font-size: clamp(21px, 2.4vw, 32px);
+									font-weight: 600;
+								">
+								Mehr als nur Kollegen: Wir sind ein Team, das auch abseits vom
+								Schreibtisch zusammenhält.
+							</h3>
+						</div>
+						<p
+							style="
+								color: #334155;
+								font-size: clamp(17px, 1.5vw, 24px);
+								line-height: 1.7;
+							">
+							Ehrlich gesagt: Die besten Ideen kommen uns fast nie am
+							Schreibtisch. Genau deshalb nehmen wir uns ganz bewusst Zeit
+							füreinander, einfach mal raus, weg von Bildschirmen, Deadlines und
+							endlosen To-do-Listen.
+						</p>
+						<p
+							style="
+								color: #475569;
+								font-size: clamp(17px, 1.5vw, 24px);
+								line-height: 1.7;
+							">
+							Beim Klettern muss sich jeder blind auf den anderen verlassen
+							können. Wir sichern uns gegenseitig, feuern uns an und knacken die
+							kniffligen Stellen zusammen. Genau dieses Vertrauen nehmen wir mit
+							in jedes Projekt.
+						</p>
+						<p
+							style="
+								color: #475569;
+								font-size: clamp(17px, 1.5vw, 24px);
+								line-height: 1.7;
+							">
+							Danach bleiben wir oft noch lange sitzen, essen etwas, reden über
+							Gott und die Welt und lassen die Gedanken einfach treiben. Und
+							ganz ehrlich: In solchen Momenten entstehen unsere besten Ideen.
+						</p>
+						<p
+							style="
+								color: #475569;
+								font-size: clamp(17px, 1.5vw, 24px);
+								line-height: 1.7;
+							">
+							Und wenn wir einfach mal raus in die Natur gehen, tanken wir
+							richtig auf. Mit freiem Kopf und guter Laune fällt es gleich viel
+							leichter, jeden Tag unser Bestes zu geben.
+						</p>
+					</div>
+				</div>
+
+				<!-- Video-Galerie: alle Clips -->
+				<p
+					class="w3-wide w3-center w3-margin-top"
+					style="
+						font-size: clamp(20px, 2vw, 28px);
+						text-transform: uppercase;
+						letter-spacing: 3px;
+						color: #6b7280;
+						font-weight: 600;
+						margin-bottom: 8px;
+					">
+					UNSERE VIDEOS
+				</p>
+				<h2
+					class="w3-center"
+					style="
+						font-size: clamp(34px, 4vw, 56px);
+						font-weight: 700;
+						margin-top: 0;
+					">
+					Kleine Einblicke in unseren Alltag
+				</h2>
+				<p
+					class="w3-center"
+					style="color: #6b7280; font-size: clamp(16px, 1.4vw, 20px)">
+					<i
+						>Ein paar echte Momente, die zeigen, wie wir als Team wirklich
+						ticken.</i
+					>
+				</p>
+				<br />
+				<div
+					id="videoGallery"
+					style="
+						display: flex;
+						flex-wrap: wrap;
+						gap: 16px;
+						justify-content: center;
+						align-items: stretch;
+						background: #b7a7a7;
+						padding: 5px;
+						border-radius: 10px;
+					">
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/beach.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Auszeit am Meer</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Abschalten, um mit frischem Kopf zurückzukommen.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/beach2.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px"
+								>Gemeinsam durchatmen</b
+							>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Pausen zusammen machen uns als Team stärker.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/mountain.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Hoch hinaus</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Wir setzen uns hohe Ziele und erreichen sie gemeinsam.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/bike.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Immer in Bewegung</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Wir bleiben aktiv und genauso agil in Projekten.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/sand.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Endlose Weite</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Wo Ruhe und Freiheit sich begegnen.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/forest.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Ruhe finden</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Im Grünen entstehen oft unsere besten Ideen.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/horse.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Vertrauen zählt</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Verlässlichkeit macht im Team den Unterschied.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/land.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Weitblick</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Wir denken gross und langfristig.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/water.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Am Wasser</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Klare Gedanken entstehen dort, wo alles fliesst.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/france.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Grenzenlos denken</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Neue Orte, neue Perspektiven, so bleiben wir offen.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/waterfall.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">In Fluss kommen</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Kreativität braucht Bewegung und Inspiration.
+							</p>
+						</div>
+					</div>
+					<div
+						class="w3-card-4 w3-round-large"
+						style="
+							flex: 1 1 calc(33.333% - 12px);
+							max-width: calc(33.333% - 12px);
+							min-width: 280px;
+							overflow: hidden;
+							background: #ffffff;
+						">
+						<video
+							style="
+								width: 100%;
+								height: 310px;
+								object-fit: cover;
+								display: block;
+							"
+							controls
+							preload="metadata">
+							<source src="./src/video/beach3.mp4" type="video/mp4" />
+							Dein Browser unterstützt kein Video.
+						</video>
+						<div style="padding: 16px">
+							<b style="color: #1e293b; font-size: 17px">Sonne tanken</b>
+							<p
+								style="
+									color: #64748b;
+									font-size: 14px;
+									line-height: 1.6;
+									margin: 8px 0 0 0;
+								">
+								Gute Laune ist die Basis für gute Arbeit.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Work Row -->
+		<div class="w3-container w3-padding-64 w3-white" id="work">
+			<div class="w3-content" style="max-width: 1700px">
+				<div class="w3-center">
+					<p
+						class="w3-wide"
+						style="
+							font-size: clamp(26px, 2.6vw, 40px);
+							text-transform: uppercase;
+							letter-spacing: 3px;
+							color: #6b7280;
+							font-weight: 600;
+							margin-bottom: 8px;
+						">
+						UNSERE ARBEIT
+					</p>
+					<h2
+						style="
+							font-size: clamp(48px, 6vw, 80px);
+							font-weight: 700;
+							margin-top: 0;
+						">
+						Projekte, die wir mit Herz gemacht haben
+					</h2>
+					<h3
+						class="w3-text-blue-grey"
+						style="
+							line-height: 1.35;
+							font-size: clamp(21px, 2.4vw, 32px);
+							font-weight: 600;
+						">
+						Ein kleiner Einblick in das, was wir mit Leidenschaft erschaffen.
+					</h3>
+				</div>
+				<br />
+
+				<div class="w3-center">
+					<p
+						style="
+							color: #334155;
+							font-size: clamp(17px, 1.5vw, 24px);
+							line-height: 1.7;
+						">
+						Hinter jedem Projekt stehen bei uns echte Menschen mit echter
+						Leidenschaft. Wir sind ein kleines, eingespieltes Team, und genau
+						das spürst du in allem, was wir tun: Jede Website ist für uns mehr
+						als ein Auftrag. Es steckt immer ein Stück von uns darin.
+					</p>
+					<p
+						style="
+							color: #475569;
+							font-size: clamp(17px, 1.5vw, 24px);
+							line-height: 1.7;
+						">
+						Angefangen haben wir zu dritt an einem viel zu kleinen Küchentisch,
+						mit viel Kaffee, noch mehr Ideen und dem festen Wunsch, Dinge
+						einfach besser zu machen. Heute arbeiten wir mit moderner Technik
+						und klaren Prozessen. Der Kaffee ist geblieben, der Anspruch auch.
+					</p>
+					<p
+						style="
+							color: #475569;
+							font-size: clamp(17px, 1.5vw, 24px);
+							line-height: 1.7;
+						">
+						Wir hören zu, stellen die richtigen Fragen und denken uns wirklich
+						in deine Idee hinein. Manchmal diskutieren wir stundenlang über eine
+						Farbe oder ein winziges Detail, weil wir fest daran glauben, dass
+						genau diese Kleinigkeiten am Ende den Unterschied machen.
+					</p>
+					<p
+						style="
+							color: #475569;
+							font-size: clamp(17px, 1.5vw, 24px);
+							line-height: 1.7;
+						">
+						Kein Projekt ist uns zu klein und keine Frage zu unwichtig. Ob du
+						gerade erst anfängst oder längst genau weisst, was du willst: Wir
+						holen dich genau da ab, wo du stehst, und gehen den ganzen Weg
+						gemeinsam mit dir.
+					</p>
+					<p
+						style="
+							color: #475569;
+							font-size: clamp(17px, 1.5vw, 24px);
+							line-height: 1.7;
+						">
+						Ehrlichkeit ist uns dabei besonders wichtig. Wir versprechen dir
+						nichts, was wir nicht halten können. Dafür bekommst du saubere
+						Arbeit, klare Worte, faire Preise und ein offenes Ohr, wann immer du
+						uns brauchst.
+					</p>
+					<p
+						style="
+							color: #475569;
+							font-size: clamp(17px, 1.5vw, 24px);
+							line-height: 1.7;
+						">
+						Am Ende zählt für uns nur eines: dass du dich mit deiner Website
+						rundum wohlfühlst und richtig stolz darauf bist. Und ganz ehrlich:
+						Wenn du am Schluss lächelst, dann haben wir alles richtig gemacht.
+					</p>
+				</div>
+
+				<br />
+
+				<div class="w3-row-padding" style="display: flex; flex-wrap: wrap">
+					<div class="w3-col l3 m6 w3-margin-bottom">
+						<div
+							class="w3-card w3-white w3-round-large w3-hover-shadow"
+							style="height: 100%; display: flex; flex-direction: column">
+							<img
+								src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80"
+								alt="Gemütliches Stadtcafé mit Sitzplätzen"
+								style="
+									width: 100%;
+									height: 200px;
+									object-fit: cover;
+									border-radius: 8px 8px 0 0;
+								" />
+							<div class="w3-blue-grey w3-padding-16 w3-center">
+								<h3 class="w3-margin-0">Café Aurora</h3>
+							</div>
+							<div class="w3-container w3-padding-16 w3-center">
+								<p class="w3-text-blue-grey" style="font-size: 18px">
+									<b>Webdesign & Relaunch</b>
+								</p>
+								<p style="font-size: 18px; line-height: 1.8; color: #475569">
+									Ein warmer, einladender Auftritt für ein kleines Stadtcafé mit
+									klarer Struktur, schnellen Ladezeiten und einer Online-Karte,
+									die auf jedem Handy Lust auf einen Besuch macht.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-col l3 m6 w3-margin-bottom">
+						<div
+							class="w3-card w3-white w3-round-large w3-hover-shadow"
+							style="height: 100%; display: flex; flex-direction: column">
+							<img
+								src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+								alt="Online-Shopping mit Laptop und Kreditkarte"
+								style="
+									width: 100%;
+									height: 200px;
+									object-fit: cover;
+									border-radius: 8px 8px 0 0;
+								" />
+							<div class="w3-blue-grey w3-padding-16 w3-center">
+								<h3 class="w3-margin-0">Nordlicht Store</h3>
+							</div>
+							<div class="w3-container w3-padding-16 w3-center">
+								<p class="w3-text-blue-grey" style="font-size: 18px">
+									<b>Online-Shop & E-Commerce</b>
+								</p>
+								<p style="font-size: 18px; line-height: 1.8; color: #475569">
+									Ein benutzerfreundlicher Shop, der wirklich verkauft: klare
+									Produktseiten, ein sicherer Bezahlvorgang und ein Checkout,
+									der in wenigen Klicks erledigt ist ganz ohne Frust.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-col l3 m6 w3-margin-bottom">
+						<div
+							class="w3-card w3-white w3-round-large w3-hover-shadow"
+							style="height: 100%; display: flex; flex-direction: column">
+							<img
+								src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80"
+								alt="Branding- und Design-Arbeitsplatz mit Farbmustern"
+								style="
+									width: 100%;
+									height: 200px;
+									object-fit: cover;
+									border-radius: 8px 8px 0 0;
+								" />
+							<div class="w3-blue-grey w3-padding-16 w3-center">
+								<h3 class="w3-margin-0">Studio Halm</h3>
+							</div>
+							<div class="w3-container w3-padding-16 w3-center">
+								<p class="w3-text-blue-grey" style="font-size: 18px">
+									<b>Branding & Identität</b>
+								</p>
+								<p style="font-size: 18px; line-height: 1.8; color: #475569">
+									Vom Logo bis zur Farbwelt: ein durchdachtes, einheitliches
+									Design, das die Persönlichkeit der Marke sichtbar macht und in
+									Erinnerung bleibt.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-col l3 m6 w3-margin-bottom">
+						<div
+							class="w3-card w3-white w3-round-large w3-hover-shadow"
+							style="height: 100%; display: flex; flex-direction: column">
+							<img
+								src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+								alt="Elegantes Hotelzimmer mit Bett"
+								style="
+									width: 100%;
+									height: 200px;
+									object-fit: cover;
+									border-radius: 8px 8px 0 0;
+								" />
+							<div class="w3-blue-grey w3-padding-16 w3-center">
+								<h3 class="w3-margin-0">Bergblick Hotel</h3>
+							</div>
+							<div class="w3-container w3-padding-16 w3-center">
+								<p class="w3-text-blue-grey" style="font-size: 18px">
+									<b>Website & Buchung</b>
+								</p>
+								<p style="font-size: 18px; line-height: 1.8; color: #475569">
+									Eine einladende Hotelseite mit Zimmerübersicht, Bildergalerie
+									und einer Buchungsanfrage, die in wenigen Schritten erledigt
+									ist.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Warum wir? -->
+		<div class="w3-content" style="max-width: 1400px">
+			<div class="w3-center" style="margin-top: 56px">
+				<p
+					style="
+						font-size: clamp(20px, 2vw, 26px);
+						letter-spacing: 3px;
+						text-transform: uppercase;
+						color: #6b7280;
+						font-weight: 600;
+						margin-bottom: 8px;
+					">
+					Warum wir?
+				</p>
+				<h2
+					style="
+						font-size: clamp(34px, 4vw, 52px);
+						font-weight: 700;
+						margin-top: 0;
+					">
+					Was uns wirklich ausmacht
+				</h2>
+				<p
+					class="w3-text-blue-grey"
+					style="
+						font-size: clamp(18px, 1.8vw, 22px);
+						font-weight: 600;
+						max-width: 760px;
+						margin: 0 auto 8px auto;
+					">
+					Drei Grundsätze, auf die du dich bei uns verlassen kannst.
+				</p>
+			</div>
+			<br />
+			<div
+				class="w3-row-padding"
+				style="display: flex; flex-wrap: wrap; align-items: stretch">
+				<div class="w3-col l4 m12 w3-margin-bottom">
+					<div
+						class="value-card w3-padding-32 w3-center"
+						style="
+							height: 100%;
+							background: #ffffff;
+							border: 1px solid #e5e7eb;
+							border-radius: 16px;
+							box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+						">
+						<div
+							style="
+								width: 72px;
+								height: 72px;
+								border-radius: 50%;
+								background: #e8eef1;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								margin: 0 auto 20px auto;
+							">
+							<i
+								class="fa fa-handshake-o"
+								style="font-size: 28px; color: #557a8c"></i>
+						</div>
+						<h4
+							style="
+								font-size: 22px;
+								font-weight: 600;
+								color: #1f2937;
+								margin: 0 0 12px 0;
+							">
+							Auf Augenhöhe
+						</h4>
+						<p style="font-size: 17px; line-height: 1.7; color: #475569">
+							Klare Worte statt Fachchinesisch und keine versteckten Kosten. Wir
+							erklären dir jeden Schritt verständlich und beraten dich ehrlich
+							auf Augenhöhe.
+						</p>
+						<a
+							href="#contact"
+							class="w3-button w3-round-large w3-margin-top"
+							style="background: #557a8c; color: #fff; padding: 10px 22px">
+							Unser Beratungsansatz
+						</a>
+					</div>
+				</div>
+				<div class="w3-col l4 m12 w3-margin-bottom">
+					<div
+						class="value-card w3-padding-32 w3-center"
+						style="
+							height: 100%;
+							background: #ffffff;
+							border: 1px solid #e5e7eb;
+							border-radius: 16px;
+							box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+						">
+						<div
+							style="
+								width: 72px;
+								height: 72px;
+								border-radius: 50%;
+								background: #e8eef1;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								margin: 0 auto 20px auto;
+							">
+							<i
+								class="fa fa-rocket"
+								style="font-size: 28px; color: #557a8c"></i>
+						</div>
+						<h4
+							style="
+								font-size: 22px;
+								font-weight: 600;
+								color: #1f2937;
+								margin: 0 0 12px 0;
+							">
+							Zielorientiert
+						</h4>
+						<p style="font-size: 17px; line-height: 1.7; color: #475569">
+							Gutes Design ist für uns kein Selbstzweck. Jede Entscheidung im
+							Layout und im Code zahlt auf schnellere Ladezeiten, mehr
+							Überzeugungskraft und am Ende mehr Anfragen ein.
+						</p>
+						<div
+							class="w3-round-large w3-margin-top"
+							style="
+								background: #eef2f4;
+								color: #557a8c;
+								padding: 8px 16px;
+								display: inline-block;
+								font-weight: 600;
+							">
+							<b>Bis zu 40%</b> schnellere Ladezeiten
+						</div>
+					</div>
+				</div>
+				<div class="w3-col l4 m12 w3-margin-bottom">
+					<div
+						class="value-card w3-padding-32 w3-center"
+						style="
+							height: 100%;
+							background: #ffffff;
+							border: 1px solid #e5e7eb;
+							border-radius: 16px;
+							box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+						">
+						<div
+							style="
+								width: 72px;
+								height: 72px;
+								border-radius: 50%;
+								background: #e8eef1;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								margin: 0 auto 20px auto;
+							">
+							<i
+								class="fa fa-lightbulb-o"
+								style="font-size: 28px; color: #557a8c"></i>
+						</div>
+						<h4
+							style="
+								font-size: 22px;
+								font-weight: 600;
+								color: #1f2937;
+								margin: 0 0 12px 0;
+							">
+							Innovationsfreudig
+						</h4>
+						<p style="font-size: 17px; line-height: 1.7; color: #475569">
+							Wir setzen auf moderne Frameworks, barrierefreie Standards (WCAG)
+							und voll-responsive Architektur, damit deine Website schnell,
+							sicher und zukunftssicher bleibt.
+						</p>
+						<div class="w3-margin-top">
+							<span
+								class="w3-tag w3-round-large w3-margin-right"
+								style="background: #eef2f4; color: #557a8c; font-weight: 600"
+								>HTML5</span
+							>
+							<span
+								class="w3-tag w3-round-large w3-margin-right"
+								style="background: #eef2f4; color: #557a8c; font-weight: 600"
+								>CSS3</span
+							>
+							<span
+								class="w3-tag w3-round-large w3-margin-right"
+								style="background: #eef2f4; color: #557a8c; font-weight: 600"
+								>JavaScript</span
+							>
+							<span
+								class="w3-tag w3-round-large"
+								style="background: #eef2f4; color: #557a8c; font-weight: 600"
+								>Canvas</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Pricing Row -->
+		<div class="w3-container w3-padding-64 w3-center" id="pricing">
+			<h2 class="w3-wide" style="font-size: 40px; font-weight: 700">PREISE</h2>
+			<p style="color: #64748b; font-size: 19px">
+				<i>Transparente Tarife ohne versteckte Kosten monatlich kündbar</i>
+			</p>
+			<br />
+
+			<div
+				style="
+					max-width: none;
+					margin: 0 12px;
+					display: flex;
+					flex-wrap: wrap;
+					gap: 20px;
+					justify-content: center;
+				">
+				<!-- Plan 1: Basic -->
+				<div style="flex: 1 1 420px; min-width: 340px; max-width: 500px">
+					<div
+						class="w3-round-large w3-padding-32 w3-center"
+						style="
+							background-color: #ffffff;
+							background-size: cover;
+							background-position: center;
+							border: 1px solid #d1d5db;
+							height: 100%;
+						">
+						<span
+							class="w3-tag w3-small w3-round w3-margin-bottom"
+							style="visibility: hidden"
+							>BELIEBT</span
+						>
+						<p
+							class="w3-wide w3-margin-0"
+							style="color: #000000; font-weight: 700; font-size: 42px">
+							BASIC
+						</p>
+						<p style="color: #94a3b8; min-height: 44px">
+							Der perfekte Start für Ihr erstes Projekt.
+						</p>
+						<p class="w3-margin-0">
+							<span class="w3-jumbo">€10</span>
+							<span style="color: #94a3b8">/Monat</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>10 GB</b><span>Speicher</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>10</b><span>E-Mails</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>10</b><span>Domains</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>Endlos</b><span>Support</span>
+						</p>
+						<button
+							class="w3-button w3-round-large w3-margin-top w3-hover-opacity"
+							style="
+								background-color: #111111;
+								color: #fff;
+								display: block;
+								width: 100%;
+								max-width: 320px;
+								box-sizing: border-box;
+								margin: 24px auto 0;
+								padding: 15px 0;
+								font-size: 15px;
+								letter-spacing: 0.5px;
+							">
+							Auswählen
+						</button>
+					</div>
+				</div>
+
+				<!-- Plan 2: Pro (hervorgehoben) -->
+				<div style="flex: 1 1 420px; min-width: 340px; max-width: 500px">
+					<div
+						class="w3-round-large w3-padding-32 w3-center"
+						style="
+							background-color: #ffffff;
+							background-size: cover;
+							background-position: center;
+							border: 1px solid #9ca3af;
+							height: 100%;
+							box-shadow: 0 0 30px rgba(156, 163, 175, 0.35);
+						">
+						<span
+							class="w3-tag w3-round w3-margin-bottom"
+							style="
+								background-color: #374151;
+								color: #fff;
+								font-size: 18px;
+								padding: 8px 30px;
+								letter-spacing: 1px;
+							"
+							>BELIEBT</span
+						>
+						<p
+							class="w3-wide w3-margin-0"
+							style="color: #000000; font-weight: 700; font-size: 42px">
+							PRO
+						</p>
+						<p style="color: #94a3b8; min-height: 44px">
+							Mehr Leistung für wachsende Teams und Ansprüche.
+						</p>
+						<p class="w3-margin-0">
+							<span class="w3-jumbo">€25</span>
+							<span style="color: #94a3b8">/Monat</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>25 GB</b><span>Speicher</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>25</b><span>E-Mails</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>25</b><span>Domains</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>Endlos</b><span>Support</span>
+						</p>
+						<button
+							class="price-btn w3-button w3-round-large w3-margin-top w3-hover-opacity"
+							style="
+								background-color: #111111;
+								color: #fff;
+								display: block;
+								width: 100%;
+								max-width: 320px;
+								box-sizing: border-box;
+								margin: 24px auto 0;
+								padding: 15px 0;
+								font-size: 15px;
+								letter-spacing: 0.5px;
+							">
+							Auswählen
+						</button>
+					</div>
+				</div>
+
+				<!-- Plan 3: Premium -->
+				<div style="flex: 1 1 420px; min-width: 340px; max-width: 500px">
+					<div
+						class="w3-round-large w3-padding-32 w3-center"
+						style="
+							background-color: #ffffff;
+							background-size: cover;
+							background-position: center;
+							border: 1px solid #d1d5db;
+							height: 100%;
+						">
+						<span
+							class="w3-tag w3-small w3-round w3-margin-bottom"
+							style="visibility: hidden"
+							>BELIEBT</span
+						>
+						<p
+							class="w3-wide w3-margin-0"
+							style="color: #000000; font-weight: 700; font-size: 42px">
+							PREMIUM
+						</p>
+						<p style="color: #94a3b8; min-height: 44px">
+							Maximale Kapazität für Profis und Unternehmen.
+						</p>
+						<p class="w3-margin-0">
+							<span class="w3-jumbo">€50</span>
+							<span style="color: #94a3b8">/Monat</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>50 GB</b><span>Speicher</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>50</b><span>E-Mails</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>50</b><span>Domains</span>
+						</p>
+						<hr
+							style="
+								border-color: #d1d5db;
+								max-width: 320px;
+								margin: 12px auto;
+							" />
+						<p class="price-feature">
+							<i class="fa fa-check-circle" style="color: #22c55e"></i>
+							<b>Endlos</b><span>Support</span>
+						</p>
+						<button
+							class="w3-button w3-round-large w3-margin-top w3-hover-opacity"
+							style="
+								background-color: #111111;
+								color: #fff;
+								display: block;
+								width: 100%;
+								max-width: 320px;
+								box-sizing: border-box;
+								margin: 24px auto 0;
+								padding: 15px 0;
+								font-size: 15px;
+								letter-spacing: 0.5px;
+							">
+							Auswählen
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Container -->
+		<div class="w3-container w3-padding-64 w3-white" id="contact">
+			<div style="max-width: none; margin: 0 12px">
+				<h2 class="w3-wide w3-center">KONTAKT</h2>
+				<p class="w3-center" style="color: #333333">
+					<i>Wir freuen uns auf Ihre Anfrage und melden uns zeitnah zurück</i>
+				</p>
+				<br />
+
+				<div
+					class="w3-row-padding"
+					style="display: flex; flex-wrap: wrap; align-items: stretch">
+					<!-- Linke Spalte: Kontaktinfos -->
+					<div class="w3-col l5 m12 w3-margin-bottom">
+						<div
+							class="w3-card-4 w3-white w3-round-large"
+							style="height: 100%; overflow: hidden">
+							<div
+								class="w3-padding-16 w3-center w3-text-white"
+								style="background-color: #333333">
+								<h3 class="w3-margin-0">
+									<i class="fa fa-map-marker w3-margin-right"></i>Kontaktdaten
+								</h3>
+							</div>
+							<div class="w3-container w3-padding-24">
+								<p style="line-height: 1.6; color: #000000">
+									Sie erreichen uns persönlich, telefonisch oder per E-Mail
+									wählen Sie einfach den Weg, der Ihnen am liebsten ist.
+								</p>
+
+								<iframe
+									title="Standort"
+									class="w3-round w3-margin-bottom"
+									style="width: 100%; height: 160px; border: 0"
+									loading="lazy"
+									src="https://www.openstreetmap.org/export/embed.html?bbox=7.4390%2C46.9500%2C7.4510%2C46.9590&layer=mapnik&marker=46.9546%2C7.4447"></iframe>
+
+								<div style="display: flex; align-items: center; margin: 18px 0">
+									<span
+										class="fa fa-map-marker w3-circle"
+										style="
+											width: 38px;
+											height: 38px;
+											line-height: 38px;
+											text-align: center;
+											margin-right: 14px;
+											color: #dc2626;
+											background-color: #fee2e2;
+										"></span>
+									<span>
+										<span
+											style="
+												display: block;
+												font-size: 12px;
+												letter-spacing: 1px;
+												text-transform: uppercase;
+												color: #9ca3af;
+											"
+											>Adresse</span
+										>
+										<span style="color: #1f2937; font-weight: 600"
+											>gibb Berufsfachschule Bern<br />Lorrainestrasse 1<br />3000
+											Bern</span
+										>
+									</span>
+								</div>
+								<div style="display: flex; align-items: center; margin: 18px 0">
+									<span
+										class="fa fa-phone w3-circle"
+										style="
+											width: 38px;
+											height: 38px;
+											line-height: 38px;
+											text-align: center;
+											margin-right: 14px;
+											color: #16a34a;
+											background-color: #dcfce7;
+										"></span>
+									<span>
+										<span
+											style="
+												display: block;
+												font-size: 12px;
+												letter-spacing: 1px;
+												text-transform: uppercase;
+												color: #9ca3af;
+											"
+											>Telefon</span
+										>
+										<span style="color: #1f2937; font-weight: 600"
+											>+41 31 335 91 11</span
+										>
+									</span>
+								</div>
+								<div style="display: flex; align-items: center; margin: 18px 0">
+									<span
+										class="fa fa-envelope w3-circle"
+										style="
+											width: 38px;
+											height: 38px;
+											line-height: 38px;
+											text-align: center;
+											margin-right: 14px;
+											color: #2563eb;
+											background-color: #dbeafe;
+										"></span>
+									<span>
+										<span
+											style="
+												display: block;
+												font-size: 12px;
+												letter-spacing: 1px;
+												text-transform: uppercase;
+												color: #9ca3af;
+											"
+											>E-Mail</span
+										>
+										<a
+											href="mailto:info@gibb.ch"
+											class="w3-hover-text-blue-grey"
+											style="
+												color: #1f2937;
+												font-weight: 600;
+												text-decoration: none;
+											"
+											>info@gibb.ch</a
+										>
+									</span>
+								</div>
+								<div
+									style="
+										display: flex;
+										align-items: center;
+										margin: 18px 0 4px 0;
+									">
+									<span
+										class="fa fa-clock-o w3-circle"
+										style="
+											width: 38px;
+											height: 38px;
+											line-height: 38px;
+											text-align: center;
+											margin-right: 14px;
+											color: #d97706;
+											background-color: #fef3c7;
+										"></span>
+									<span>
+										<span
+											style="
+												display: block;
+												font-size: 12px;
+												letter-spacing: 1px;
+												text-transform: uppercase;
+												color: #9ca3af;
+											"
+											>Öffnungszeiten</span
+										>
+										<span style="color: #1f2937; font-weight: 600"
+											>Mo–Fr: 9–18 Uhr</span
+										>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Rechte Spalte: Formular -->
+					<div class="w3-col l7 m12 w3-margin-bottom">
+						<form
+							class="w3-card-4 w3-white w3-round-large"
+							style="height: 100%; min-height: 620px; overflow: hidden"
+							action="https://www.w3schools.com/action_page.php"
+							target="_blank">
+							<div
+								class="w3-padding-16 w3-center w3-text-white"
+								style="background-color: #333333">
+								<h3 class="w3-margin-0">
+									<i class="fa fa-paper-plane w3-margin-right"></i>Schreib uns
+								</h3>
+							</div>
+							<div class="w3-container w3-padding-24">
+								<div class="w3-row-padding" style="margin: 0 -8px 16px -8px">
+									<div class="w3-half w3-margin-bottom">
+										<label class="w3-text-blue-grey"><b>Name</b></label>
+										<div style="position: relative">
+											<i
+												class="fa fa-user"
+												style="
+													position: absolute;
+													left: 12px;
+													top: 12px;
+													color: #90a4ae;
+												"></i>
+											<input
+												class="w3-input w3-border w3-round"
+												style="padding-left: 36px"
+												type="text"
+												name="Name"
+												placeholder="Dein Name"
+												required />
+										</div>
+									</div>
+									<div class="w3-half">
+										<label class="w3-text-blue-grey"><b>E-Mail</b></label>
+										<div style="position: relative">
+											<i
+												class="fa fa-envelope"
+												style="
+													position: absolute;
+													left: 12px;
+													top: 12px;
+													color: #90a4ae;
+												"></i>
+											<input
+												class="w3-input w3-border w3-round"
+												style="padding-left: 36px"
+												type="email"
+												name="Email"
+												placeholder="name@beispiel.de"
+												required />
+										</div>
+									</div>
+								</div>
+
+								<div class="w3-row-padding" style="margin: 0 -8px 16px -8px">
+									<div class="w3-half w3-margin-bottom">
+										<label class="w3-text-blue-grey"><b>Benutzername</b></label>
+										<div style="position: relative">
+											<i
+												class="fa fa-user-circle"
+												style="
+													position: absolute;
+													left: 12px;
+													top: 12px;
+													color: #90a4ae;
+												"></i>
+											<input
+												class="w3-input w3-border w3-round"
+												style="padding-left: 36px"
+												type="text"
+												name="Username"
+												placeholder="Dein Benutzername"
+												required />
+										</div>
+									</div>
+									<div class="w3-half">
+										<label class="w3-text-blue-grey"><b>Alter</b></label>
+										<div style="position: relative">
+											<i
+												class="fa fa-birthday-cake"
+												style="
+													position: absolute;
+													left: 12px;
+													top: 12px;
+													color: #90a4ae;
+												"></i>
+											<input
+												class="w3-input w3-border w3-round"
+												style="padding-left: 36px"
+												type="number"
+												name="Age"
+												min="1"
+												placeholder="Dein Alter"
+												required />
+										</div>
+									</div>
+								</div>
+
+								<label class="w3-text-blue-grey"><b>Passwort</b></label>
+								<div style="position: relative; margin-bottom: 16px">
+									<i
+										class="fa fa-lock"
+										style="
+											position: absolute;
+											left: 12px;
+											top: 12px;
+											color: #90a4ae;
+										"></i>
+									<input
+										class="w3-input w3-border w3-round"
+										style="padding-left: 36px"
+										type="password"
+										name="Password"
+										placeholder="Dein Passwort"
+										required />
+								</div>
+
+								<label class="w3-text-blue-grey"><b>Nachricht</b></label>
+								<textarea
+									class="w3-input w3-border w3-round"
+									name="Message"
+									placeholder="Deine Nachricht..."
+									rows="5"
+									required></textarea>
+
+								<div class="w3-section">
+									<input class="w3-check" type="checkbox" checked name="Like" />
+									<label>Ich stimme den Bedingungen zu</label>
+								</div>
+
+								<button
+									type="submit"
+									class="w3-button w3-padding-large w3-round w3-block w3-text-white w3-hover-black"
+									style="background-color: #333333">
+									<i class="fa fa-paper-plane w3-margin-right"></i>Nachricht
+									senden
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Kostenlose Karte (OpenStreetMap, kein API-Key nötig) -->
+		<div class="w3-padding-32" style="margin: 0 12px">
+			<iframe
+				title="Standort auf OpenStreetMap"
+				class="w3-card-4 w3-round-large"
+				style="width: 100%; height: 400px; border: 0; display: block"
+				loading="lazy"
+				src="https://www.openstreetmap.org/export/embed.html?bbox=7.4200%2C46.9400%2C7.4700%2C46.9600&layer=mapnik&marker=46.9480%2C7.4474"></iframe>
+			<p class="w3-small w3-center w3-opacity">
+				<a
+					href="https://www.openstreetmap.org/?mlat=46.9546&mlon=7.4447#map=17/46.9546/7.4447"
+					target="_blank"
+					class="w3-hover-text-blue-grey"
+					>Grössere Karte anzeigen</a
+				>
+			</p>
+		</div>
+
+		<!-- Footer -->
+		<footer
+			id="siteFooter"
+			class="w3-text-white"
+			style="
+				background-image:
+					linear-gradient(rgba(12, 17, 29, 0.78), rgba(12, 17, 29, 0.85)),
+					url('./src/video/img/map.jpg');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				image-rendering: -webkit-optimize-contrast;
+				border-radius: 24px 24px 0 0;
+				margin: 0 12px;
+			">
+			<div class="w3-container w3-padding-16">
+				<div class="w3-content">
+					<div class="w3-row-padding">
+						<!-- Marke -->
+						<div class="w3-col l4 m12 w3-margin-bottom">
+							<div class="w3-margin-bottom">
+								<span
+									class="fa fa-asterisk w3-text-white"
+									style="
+										background-color: #1a1f2b;
+										padding: 10px 12px;
+										border-radius: 10px;
+									"></span>
+								<b class="w3-large w3-margin-left"
+									>TEAM <span style="color: #9e9e9e">PRO</span></b
+								>
+							</div>
+							<p style="color: #94a3b8; max-width: 320px">
+								Ein kleines, kreatives Team mit grosser Leidenschaft für gutes
+								Webdesign schnell, leicht und mit Fokus auf gute Ideen.
+							</p>
+							<div class="w3-margin-top w3-large">
+								<a
+									href="javascript:void(0)"
+									class="w3-hover-opacity"
+									title="Twitter"
+									style="
+										display: inline-flex;
+										align-items: center;
+										justify-content: center;
+										width: 40px;
+										height: 40px;
+										border-radius: 50%;
+										margin-right: 10px;
+										color: #fff;
+										background-color: #1da1f2;
+									"
+									><i class="fa fa-twitter"></i
+								></a>
+								<a
+									href="https://www.linkedin.com/school/gibb/"
+									target="_blank"
+									rel="noopener"
+									class="w3-hover-opacity"
+									title="LinkedIn"
+									style="
+										display: inline-flex;
+										align-items: center;
+										justify-content: center;
+										width: 40px;
+										height: 40px;
+										border-radius: 50%;
+										margin-right: 10px;
+										color: #fff;
+										background-color: #0a66c2;
+									"
+									><i class="fa fa-linkedin"></i
+								></a>
+								<a
+									href="https://www.facebook.com/gibb.ch/"
+									target="_blank"
+									rel="noopener"
+									class="w3-hover-opacity"
+									title="Facebook"
+									style="
+										display: inline-flex;
+										align-items: center;
+										justify-content: center;
+										width: 40px;
+										height: 40px;
+										border-radius: 50%;
+										margin-right: 10px;
+										color: #fff;
+										background-color: #1877f2;
+									"
+									><i class="fa fa-facebook"></i
+								></a>
+								<a
+									href="https://www.instagram.com/gibb.ch"
+									target="_blank"
+									rel="noopener"
+									class="w3-hover-opacity"
+									title="Instagram"
+									style="
+										display: inline-flex;
+										align-items: center;
+										justify-content: center;
+										width: 40px;
+										height: 40px;
+										border-radius: 50%;
+										margin-right: 10px;
+										color: #fff;
+										background: linear-gradient(
+											45deg,
+											#f09433,
+											#e6683c,
+											#dc2743,
+											#cc2366,
+											#bc1888
+										);
+									"
+									><i class="fa fa-instagram"></i
+								></a>
+								<a
+									href="https://www.youtube.com/@gibbberufsfachschulebern"
+									target="_blank"
+									rel="noopener"
+									class="w3-hover-opacity"
+									title="YouTube"
+									style="
+										display: inline-flex;
+										align-items: center;
+										justify-content: center;
+										width: 40px;
+										height: 40px;
+										border-radius: 50%;
+										color: #fff;
+										background-color: #ff0000;
+									"
+									><i class="fa fa-youtube-play"></i
+								></a>
+							</div>
+						</div>
+
+						<!-- Allgemein -->
+						<div class="w3-col l2 s6 w3-margin-bottom">
+							<p style="color: #64748b"><b>Allgemein</b></p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Start</a
+								>
+							</p>
+							<p>
+								<a
+									href="#team"
+									class="w3-hover-text-white"
+									style="color: #334155"
+									>Team</a
+								>
+							</p>
+							<p>
+								<a
+									href="#work"
+									class="w3-hover-text-white"
+									style="color: #334155"
+									>Arbeit</a
+								>
+							</p>
+							<p>
+								<a
+									href="#pricing"
+									class="w3-hover-text-white"
+									style="color: #334155"
+									>Preise</a
+								>
+							</p>
+							<p>
+								<a
+									href="#contact"
+									class="w3-hover-text-white"
+									style="color: #334155"
+									>Kontakt</a
+								>
+							</p>
+						</div>
+
+						<!-- Unternehmen -->
+						<div class="w3-col l2 s6 w3-margin-bottom">
+							<p style="color: #64748b"><b>Unternehmen</b></p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Über uns</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Karriere</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Presse</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>News</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Media Kit</a
+								>
+							</p>
+						</div>
+
+						<!-- Ressourcen -->
+						<div class="w3-col l2 s6 w3-margin-bottom">
+							<p style="color: #64748b"><b>Ressourcen</b></p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Blog</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Newsletter</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Events</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Hilfe-Center</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Tutorials</a
+								>
+							</p>
+						</div>
+
+						<!-- Rechtliches -->
+						<div class="w3-col l2 s6 w3-margin-bottom">
+							<p style="color: #64748b"><b>Rechtliches</b></p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>AGB</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Datenschutz</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Cookies</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Lizenzen</a
+								>
+							</p>
+							<p>
+								<a href="#" class="w3-hover-text-white" style="color: #334155"
+									>Impressum</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Unterste Leiste -->
+			<div
+				class="w3-container w3-padding-16 w3-center"
+				style="border-top: 1px solid #1a1f2b">
+				<p class="w3-small w3-margin-0" style="color: #64748b">
+					<i class="fa fa-copyright w3-margin-right"></i>2026 TEAMPRO Alle
+					Rechte vorbehalten. Powered by
+					<a
+						href="https://www.w3schools.com/w3css/default.asp"
+						target="_blank"
+						class="w3-hover-text-white"
+						style="color: #94a3b8"
+						>w3.css</a
+					>
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			// Script for side navigation
+			function w3_open() {
+				var x = document.getElementById('mySidebar');
+				x.style.width = '300px';
+				x.style.paddingTop = '10%';
+				x.style.display = 'block';
+			}
+
+			// Close side navigation
+			function w3_close() {
+				document.getElementById('mySidebar').style.display = 'none';
+			}
+
+			// Used to toggle the menu on smaller screens when clicking on the menu button
+			function openNav() {
+				var x = document.getElementById('navDemo');
+				if (x.className.indexOf('w3-show') == -1) {
+					x.className += ' w3-show';
+				} else {
+					x.className = x.className.replace(' w3-show', '');
+				}
+			}
+
+			// Aktiven Menüpunkt als dunkle Pille mit Glow unten markieren
+			function setActiveNav(el) {
+				var links = document.getElementsByClassName('nav-link');
+				for (var i = 0; i < links.length; i++) {
+					links[i].style.borderRadius = '';
+					links[i].style.border = '';
+					links[i].style.boxShadow = '';
+					links[i].style.backgroundColor = '';
+				}
+				el.style.borderRadius = '20px';
+				el.style.border = '1px solid #3a3a3a';
+				el.style.backgroundColor = '#262626';
+				el.style.boxShadow =
+					'inset 0 -12px 16px -10px rgba(255, 255, 255, 0.7)';
+			}
+
+			// Such-Modal öffnen/schliessen
+			function openSearch() {
+				document.getElementById('searchModal').style.display = 'block';
+				document.getElementById('searchInput').focus();
+			}
+			function closeSearch() {
+				document.getElementById('searchModal').style.display = 'none';
+			}
+
+			// Enter startet die Suche, sonst Vorschläge filtern
+			function handleSearchKey(event) {
+				filterSuggestions();
+				if (event.key === 'Enter') {
+					doSearch();
+				}
+			}
+
+			// Vorschläge nach Eingabe filtern (nur passende zeigen)
+			function filterSuggestions() {
+				var value = document
+					.getElementById('searchInput')
+					.value.trim()
+					.toLowerCase();
+				var items = document.getElementsByClassName('search-suggestion');
+				var anyVisible = false;
+				for (var i = 0; i < items.length; i++) {
+					var term = items[i].getAttribute('data-term').toLowerCase();
+					if (value === '' || term.indexOf(value) === 0) {
+						items[i].style.display = 'block';
+						anyVisible = true;
+					} else {
+						items[i].style.display = 'none';
+					}
+				}
+				document.getElementById('suggestionsTitle').style.display = anyVisible
+					? 'block'
+					: 'none';
+			}
+
+			// Klick auf einen Vorschlag: nur das Suchfeld füllen
+			function quickSearch(term) {
+				var input = document.getElementById('searchInput');
+				input.value = term;
+				input.focus();
+				filterSuggestions();
+			}
+
+			// Alte Markierungen entfernen
+			function clearHighlights() {
+				var marks = document.querySelectorAll('mark.search-hit');
+				marks.forEach(function (m) {
+					var parent = m.parentNode;
+					parent.replaceChild(document.createTextNode(m.textContent), m);
+					parent.normalize();
+				});
+			}
+
+			// Text auf der Seite suchen und markieren
+			function doSearch() {
+				var term = document.getElementById('searchInput').value.trim();
+				var result = document.getElementById('searchResult');
+				clearHighlights();
+				if (!term) {
+					result.innerHTML = '';
+					return;
+				}
+
+				var lower = term.toLowerCase();
+				var count = 0;
+				var walker = document.createTreeWalker(
+					document.body,
+					NodeFilter.SHOW_TEXT,
+					{
+						acceptNode: function (node) {
+							if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+							var p = node.parentNode;
+							if (!p) return NodeFilter.FILTER_REJECT;
+							var tag = p.nodeName;
+							if (
+								tag === 'SCRIPT' ||
+								tag === 'STYLE' ||
+								tag === 'MARK' ||
+								tag === 'INPUT' ||
+								tag === 'TEXTAREA'
+							)
+								return NodeFilter.FILTER_REJECT;
+							if (p.closest && p.closest('#searchModal'))
+								return NodeFilter.FILTER_REJECT;
+							// Navbar und Sidebar nicht durchsuchen, nur den Text darunter
+							if (p.closest && p.closest('.w3-top, #mySidebar'))
+								return NodeFilter.FILTER_REJECT;
+							return node.nodeValue.toLowerCase().indexOf(lower) > -1
+								? NodeFilter.FILTER_ACCEPT
+								: NodeFilter.FILTER_REJECT;
+						},
+					},
+				);
+
+				var nodes = [];
+				while (walker.nextNode()) nodes.push(walker.currentNode);
+
+				nodes.forEach(function (node) {
+					var text = node.nodeValue;
+					var lowerText = text.toLowerCase();
+					var frag = document.createDocumentFragment();
+					var pos = 0;
+					var idx;
+					while ((idx = lowerText.indexOf(lower, pos)) > -1) {
+						if (idx > pos)
+							frag.appendChild(document.createTextNode(text.slice(pos, idx)));
+						var mark = document.createElement('mark');
+						mark.className = 'search-hit';
+						mark.textContent = text.slice(idx, idx + term.length);
+						frag.appendChild(mark);
+						pos = idx + term.length;
+						count++;
+					}
+					if (pos < text.length)
+						frag.appendChild(document.createTextNode(text.slice(pos)));
+					node.parentNode.replaceChild(frag, node);
+				});
+
+				if (count > 0) {
+					result.innerHTML = count + ' Treffer für „' + term + '" gefunden.';
+					closeSearch();
+					var first = document.querySelector('mark.search-hit');
+					if (first)
+						first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+				} else {
+					result.innerHTML = 'Keine Treffer für „' + term + '".';
+				}
+			}
+
+			// Navbar beim Runterscrollen ausblenden, beim Hochscrollen einblenden
+			(function () {
+				var nav = document.getElementById('mainNav');
+				var lastScroll = 0;
+				window.addEventListener('scroll', function () {
+					var current =
+						window.pageYOffset || document.documentElement.scrollTop;
+					if (current > lastScroll && current > 80) {
+						nav.style.transform = 'translateY(-120%)';
+					} else {
+						nav.style.transform = 'translateY(0)';
+					}
+					lastScroll = current < 0 ? 0 : current;
+				});
+			})();
+		</script>
+
+		<span
+			style="
+				border-radius: 10px !important;
+				text-indent: 12px !important;
+				width: auto !important;
+				height: 20px !important;
+				padding: 0px 8px !important;
+				text-align: center !important;
+				vertical-align: middle !important;
+				font:
+					bold 11px / 20px 'Helvetica Neue',
+					Helvetica,
+					sans-serif !important;
+				color: rgb(255, 255, 255) !important;
+				background: url('data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=')
+					4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important;
+				position: absolute !important;
+				opacity: 1 !important;
+				z-index: 8675309 !important;
+				display: none;
+				cursor: pointer !important;
+				border: none !important;
+				-webkit-font-smoothing: antialiased !important;
+				top: 10px;
+				left: 10px;
+			"
+			>Merken</span
+		>
+		<span
+			style="
+				border-radius: 12px;
+				width: 24px !important;
+				height: 24px !important;
+				background: url('data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMTEiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9jaXJjbGU+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMDgzNCA0LjU4MzMzSDEzLjMzMzRWNS43NDk5OUgxNS4wODM0QzE1LjcyNjggNS43NDk5OSAxNi4yNSA2LjI3MzI0IDE2LjI1IDYuOTE2NjZWOC42NjY2NkgxNy40MTY3VjYuOTE2NjZDMTcuNDE2NyA1LjYyOTgzIDE2LjM3MDIgNC41ODMzMyAxNS4wODM0IDQuNTgzMzNaTTE2LjI1IDE1LjA4MzNDMTYuMjUgMTUuNzI2NyAxNS43MjY4IDE2LjI1IDE1LjA4MzQgMTYuMjVIMTMuMzMzNFYxNy40MTY3SDE1LjA4MzRDMTYuMzcwMiAxNy40MTY3IDE3LjQxNjcgMTYuMzcwMiAxNy40MTY3IDE1LjA4MzNWMTMuMzMzM0gxNi4yNVYxNS4wODMzWk01Ljc1MDA0IDE1LjA4MzNWMTMuMzMzM0g0LjU4MzM3VjE1LjA4MzNDNC41ODMzNyAxNi4zNzAyIDUuNjI5ODcgMTcuNDE2NyA2LjkxNjcxIDE3LjQxNjdIOC42NjY3MVYxNi4yNUg2LjkxNjcxQzYuMjczMjkgMTYuMjUgNS43NTAwNCAxNS43MjY3IDUuNzUwMDQgMTUuMDgzM1pNNS43NTAwNCA2LjkxNjY2QzUuNzUwMDQgNi4yNzMyNCA2LjI3MzI5IDUuNzQ5OTkgNi45MTY3MSA1Ljc0OTk5SDguNjY2NzFWNC41ODMzM0g2LjkxNjcxQzUuNjI5ODcgNC41ODMzMyA0LjU4MzM3IDUuNjI5ODMgNC41ODMzNyA2LjkxNjY2VjguNjY2NjZINS43NTAwNFY2LjkxNjY2Wk05LjI1MDA0IDEwLjcwODNDOS4yNTAwNCA5LjkwNDQ5IDkuOTA0NTQgOS4yNDk5OSAxMC43MDg0IDkuMjQ5OTlDMTEuNTEyMiA5LjI0OTk5IDEyLjE2NjcgOS45MDQ0OSAxMi4xNjY3IDEwLjcwODNDMTIuMTY2NyAxMS41MTIyIDExLjUxMjIgMTIuMTY2NyAxMC43MDg0IDEyLjE2NjdDOS45MDQ1NCAxMi4xNjY3IDkuMjUwMDQgMTEuNTEyMiA5LjI1MDA0IDEwLjcwODNaTTEzLjYyNSAxNC41QzEzLjg0OSAxNC41IDE0LjA3MyAxNC40MTQ4IDE0LjI0NCAxNC4yNDM5QzE0LjU4NTIgMTMuOTAyMSAxNC41ODUyIDEzLjM0NzkgMTQuMjQ0IDEzLjAwNjFMMTMuMDcwMyAxMS44MzNDMTMuMjM0MiAxMS40OTA2IDEzLjMzMzQgMTEuMTEyNiAxMy4zMzM0IDEwLjcwODNDMTMuMzMzNCA5LjI2MTA4IDEyLjE1NTYgOC4wODMzMyAxMC43MDg0IDguMDgzMzNDOS4yNjExMiA4LjA4MzMzIDguMDgzMzcgOS4yNjEwOCA4LjA4MzM3IDEwLjcwODNDOC4wODMzNyAxMi4xNTU2IDkuMjYxMTIgMTMuMzMzMyAxMC43MDg0IDEzLjMzMzNDMTEuMTEyNiAxMy4zMzMzIDExLjQ5MDYgMTMuMjM0MiAxMS44MzMgMTMuMDcwMkwxMy4wMDYxIDE0LjI0MzlDMTMuMTc3IDE0LjQxNDggMTMuNDAxIDE0LjUgMTMuNjI1IDE0LjVaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=')
+					50% 50% / 24px 24px no-repeat rgba(0, 0, 0, 0.4) !important;
+				position: absolute !important;
+				opacity: 1 !important;
+				z-index: 8675309 !important;
+				display: none;
+				cursor: pointer !important;
+				border: none !important;
+				top: 10px;
+				left: 1871px;
+			"></span>
+	</body>
+</html>
