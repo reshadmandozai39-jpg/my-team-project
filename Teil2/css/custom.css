@@ -1,0 +1,119 @@
+/* ===== Eigene Styles (aus index.html verschoben) ===== */
+/* Sanftes Anheben der Werte-Karten beim Hover */
+.value-card {
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+.value-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+/* Preiskarten */
+.price-card {
+	transition:
+		transform 0.25s ease,
+		box-shadow 0.25s ease;
+}
+.price-card:hover {
+	transform: translateY(-6px);
+}
+.price-btn {
+	transition:
+		transform 0.15s ease,
+		filter 0.15s ease;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+}
+.price-btn:hover {
+	filter: brightness(1.12);
+	transform: translateY(-1px);
+}
+.price-feature {
+	display: grid;
+	grid-template-columns: 22px 80px 1fr;
+	align-items: center;
+	gap: 10px;
+	max-width: 320px;
+	margin: 8px auto;
+	text-align: left;
+	color: #334155;
+	font-size: 17px;
+	line-height: 1.4;
+}
+.price-feature b {
+	white-space: nowrap;
+}
+
+/* Navigationslinks im bunten Markenverlauf */
+.nav-gradient {
+	font-weight: 700;
+	background: linear-gradient(
+		45deg,
+		#f09433 0%,
+		#e6683c 25%,
+		#dc2743 50%,
+		#cc2366 75%,
+		#bc1888 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+}
+.nav-gradient:hover {
+	opacity: 0.8;
+}
+
+/* Aufklappbares Menue auf kleinen Bildschirmen */
+#navDemo {
+	margin: 6px 12px 0 12px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+#navDemo a {
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+#navDemo a:first-child {
+	border-top: none;
+}
+
+/* Video-Galerie: responsive, Videohoehe skaliert mit der Breite */
+#videoGallery > div {
+	flex: 1 1 calc(50% - 8px) !important;
+	max-width: calc(50% - 8px) !important;
+}
+#videoGallery video {
+	width: 100%;
+	height: clamp(220px, 24vw, 420px) !important;
+	object-fit: cover;
+}
+@media (max-width: 600px) {
+	#videoGallery > div {
+		flex: 1 1 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+/* Footer kompakter: weniger Höhe */
+#siteFooter .w3-container {
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+}
+#siteFooter .w3-row-padding p {
+	margin: 2px 0;
+	font-size: 14px;
+	line-height: 1.4;
+}
+#siteFooter .w3-row-padding .w3-margin-bottom {
+	margin-bottom: 6px !important;
+}
+#siteFooter .w3-margin-top {
+	margin-top: 8px !important;
+}
+
+.nav-link:hover {
+	border-radius: 20px;
+}
