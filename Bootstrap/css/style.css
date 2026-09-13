@@ -1,0 +1,223 @@
+:root {
+	--bs-primary: #0d6efd;
+	--bs-secondary: #6c757d;
+	--bs-dark: #111827;
+	--bs-light: #f8f9fa;
+	--bs-accent: #7c3aed;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(180deg, #eef4ff 0%, #ffffff 100%);
+	min-width: 320px;
+}
+
+.hero {
+	background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 50%, #7c3aed 100%);
+	color: white;
+	padding: 100px 0;
+}
+
+.glass {
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	backdrop-filter: blur(8px);
+}
+
+.section-title {
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.demo-box {
+	background: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-radius: 12px;
+	padding: 2rem;
+	height: 100%;
+}
+
+.feature-card {
+	border: none;
+	box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+	border-radius: 18px;
+}
+.floating-badge {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.code-box {
+	background: #111827;
+	color: #d1fae5;
+	border-radius: 12px;
+	padding: 1rem;
+	font-family: 'Courier New', monospace;
+}
+.breakpoint-table tr.active {
+	background: rgba(13, 110, 253, 0.08);
+	font-weight: 700;
+}
+.breakpoint-demo .card {
+	min-height: 110px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
+.breakpoint-demo .breakpoint-cat-image {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	display: block;
+}
+.color-card {
+	border: 0;
+	border-radius: 14px;
+	overflow: hidden;
+	box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+.color-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 14px 28px rgba(15, 23, 42, 0.14);
+}
+.color-swatch {
+	height: 78px;
+}
+.color-meta {
+	background: white;
+	padding: 0.75rem;
+}
+.typography-preview {
+	min-height: 190px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: linear-gradient(135deg, #eef4ff, #fff1f7);
+	border-radius: 16px;
+	padding: 2rem;
+}
+.device-frame {
+	margin: 0 auto;
+	padding: 0.65rem;
+	background: #172033;
+	border: 5px solid #0f172a;
+	border-radius: 24px;
+	box-shadow: 0 18px 35px rgba(15, 23, 42, 0.2);
+	transition: width 0.3s ease;
+}
+.device-frame.phone {
+	max-width: 230px;
+}
+.device-frame.phone-large {
+	max-width: 300px;
+}
+.device-frame.tablet {
+	max-width: 430px;
+}
+.device-frame.laptop {
+	max-width: 700px;
+	border-radius: 12px;
+}
+.device-frame.desktop {
+	max-width: 900px;
+	border-radius: 10px;
+}
+.device-frame.wide {
+	max-width: 1100px;
+	border-radius: 8px;
+}
+.device-screen {
+	background: white;
+	border-radius: 14px;
+	overflow: hidden;
+}
+.device-frame.laptop .device-screen {
+	border-radius: 6px;
+}
+.device-screen img {
+	display: block;
+	width: 100%;
+	height: 210px;
+	object-fit: cover;
+	max-width: 100%;
+}
+.device-frame.phone .device-screen img {
+	height: 260px;
+}
+.device-frame.phone-large .device-screen img {
+	height: 300px;
+}
+.device-frame.tablet .device-screen img {
+	height: 250px;
+}
+.video-stage {
+	background: radial-gradient(circle at top, #243b64, #111827 70%);
+	border-radius: 18px;
+	padding: 1.5rem;
+	overflow: hidden;
+}
+.video-preview {
+	width: var(--video-size, 100%);
+	max-width: 100%;
+	margin: 0 auto;
+	transition: width 0.25s ease;
+}
+.video-preview video {
+	border-radius: 12px;
+	box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+.video-choice.active {
+	box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+.grid-cat-card {
+	position: relative;
+	height: 150px;
+	border-radius: 14px;
+	overflow: hidden;
+	background: #172033;
+	box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+.grid-cat-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 100%;
+}
+.grid-cat-card span {
+	position: absolute;
+	left: 0.75rem;
+	bottom: 0.65rem;
+	padding: 0.3rem 0.65rem;
+	border-radius: 999px;
+	background: rgba(15, 23, 42, 0.78);
+	color: white;
+	font-weight: 700;
+}
+.form-success-message {
+	background: linear-gradient(135deg, #d1e7dd, #e8f7ef);
+	border: 1px solid #75b798;
+	border-radius: 14px;
+	color: #0f5132;
+	padding: 1rem;
+	animation: form-success-in 0.35s ease-out;
+}
+.button-choice.selected {
+	box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.25);
+	transform: translateY(-2px);
+}
+
+@keyframes form-success-in {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
